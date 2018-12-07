@@ -19374,6 +19374,7 @@ Processing by PlacesController#show as HTML
 Completed 200 OK in 69ms (Views: 66.3ms | ActiveRecord: 0.6ms)
 
 
+<<<<<<< HEAD
   [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
   [1m[35m (3.5ms)[0m  [1m[35mBEGIN[0m
@@ -19438,12 +19439,16 @@ Completed 200 OK in 69ms (Views: 66.3ms | ActiveRecord: 0.6ms)
   ↳ db/seeds.rb:26
   [1m[36mPlace Load (0.3ms)[0m  [1m[34mSELECT  "places".* FROM "places" LIMIT $1[0m  [["LIMIT", 11]]
 Started GET "/" for 127.0.0.1 at 2018-12-07 16:18:26 +0100
+=======
+Started GET "/" for 127.0.0.1 at 2018-12-07 11:31:55 +0100
+>>>>>>> master
   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /home/salim/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1.1/lib/active_record/log_subscriber.rb:98
 Processing by HomeController#index as HTML
   Rendering home/index.html.erb within layouts/application
   [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
   ↳ app/views/home/index.html.erb:53
+<<<<<<< HEAD
   Rendered home/index.html.erb within layouts/application (25.2ms)
 Completed 200 OK in 477ms (Views: 454.7ms | ActiveRecord: 4.4ms)
 
@@ -19454,6 +19459,15 @@ Started GET "/images/screen-2.jpg" for 127.0.0.1 at 2018-12-07 16:18:27 +0100
 Started GET "/images/screen-3.jpg" for 127.0.0.1 at 2018-12-07 16:18:27 +0100
   
 ActionController::RoutingError (No route matches [GET] "/images/team-section-4.png"):
+=======
+  Rendered home/index.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 563ms (Views: 541.1ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/images/service-icon-2.png" for 127.0.0.1 at 2018-12-07 11:31:55 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/service-icon-2.png"):
+>>>>>>> master
   
 actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -19482,9 +19496,18 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/screen-4.jpg" for 127.0.0.1 at 2018-12-07 16:18:27 +0100
   
 ActionController::RoutingError (No route matches [GET] "/images/screen-2.jpg"):
+=======
+Started GET "/images/screen-4.jpg" for 127.0.0.1 at 2018-12-07 11:31:56 +0100
+Started GET "/images/screen-3.jpg" for 127.0.0.1 at 2018-12-07 11:31:56 +0100
+Started GET "/images/service-icon-1.png" for 127.0.0.1 at 2018-12-07 11:31:56 +0100
+Started GET "/images/screen-1.jpg" for 127.0.0.1 at 2018-12-07 11:31:56 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/screen-4.jpg"):
+>>>>>>> master
   
 actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -19514,7 +19537,11 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
   
+<<<<<<< HEAD
 ActionController::RoutingError (No route matches [GET] "/images/screen-1.jpg"):
+=======
+ActionController::RoutingError (No route matches [GET] "/images/service-icon-1.png"):
+>>>>>>> master
   
 actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -19544,6 +19571,10 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
   
+<<<<<<< HEAD
+=======
+Started GET "/images/screen-2.jpg" for 127.0.0.1 at 2018-12-07 11:31:56 +0100
+>>>>>>> master
 ActionController::RoutingError (No route matches [GET] "/images/screen-3.jpg"):
   
 actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
@@ -19574,7 +19605,11 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
   
+<<<<<<< HEAD
 ActionController::RoutingError (No route matches [GET] "/images/screen-4.jpg"):
+=======
+ActionController::RoutingError (No route matches [GET] "/images/screen-1.jpg"):
+>>>>>>> master
   
 actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -19603,9 +19638,14 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/service-icon-1.png" for 127.0.0.1 at 2018-12-07 16:18:28 +0100
   
 ActionController::RoutingError (No route matches [GET] "/images/service-icon-1.png"):
+=======
+  
+ActionController::RoutingError (No route matches [GET] "/images/screen-2.jpg"):
+>>>>>>> master
   
 actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -19634,9 +19674,15 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/service-icon-2.png" for 127.0.0.1 at 2018-12-07 16:18:28 +0100
   
 ActionController::RoutingError (No route matches [GET] "/images/service-icon-2.png"):
+=======
+Started GET "/images/service-icon-3.png" for 127.0.0.1 at 2018-12-07 11:31:56 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/service-icon-3.png"):
+>>>>>>> master
   
 actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -19665,9 +19711,15 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/service-icon-3.png" for 127.0.0.1 at 2018-12-07 16:18:28 +0100
   
 ActionController::RoutingError (No route matches [GET] "/images/service-icon-3.png"):
+=======
+Started GET "/images/screen-7.jpg" for 127.0.0.1 at 2018-12-07 11:31:56 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/screen-7.jpg"):
+>>>>>>> master
   
 actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -19696,9 +19748,16 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/screen-7.jpg" for 127.0.0.1 at 2018-12-07 16:18:28 +0100
   
 ActionController::RoutingError (No route matches [GET] "/images/screen-7.jpg"):
+=======
+Started GET "/images/portfolio-icon-1.png" for 127.0.0.1 at 2018-12-07 11:31:56 +0100
+Started GET "/images/portfolio-icon-2.png" for 127.0.0.1 at 2018-12-07 11:31:56 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/portfolio-icon-1.png"):
+>>>>>>> master
   
 actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -19727,9 +19786,15 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/portfolio-icon-1.png" for 127.0.0.1 at 2018-12-07 16:18:28 +0100
   
 ActionController::RoutingError (No route matches [GET] "/images/portfolio-icon-1.png"):
+=======
+Started GET "/images/portfolio-icon-3.png" for 127.0.0.1 at 2018-12-07 11:31:56 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/portfolio-icon-2.png"):
+>>>>>>> master
   
 actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -19758,9 +19823,14 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/portfolio-icon-2.png" for 127.0.0.1 at 2018-12-07 16:18:28 +0100
   
 ActionController::RoutingError (No route matches [GET] "/images/portfolio-icon-2.png"):
+=======
+  
+ActionController::RoutingError (No route matches [GET] "/images/portfolio-icon-3.png"):
+>>>>>>> master
   
 actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -19789,9 +19859,15 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/portfolio-icon-3.png" for 127.0.0.1 at 2018-12-07 16:18:28 +0100
   
 ActionController::RoutingError (No route matches [GET] "/images/portfolio-icon-3.png"):
+=======
+Started GET "/images/portfolio-icon-4.png" for 127.0.0.1 at 2018-12-07 11:31:57 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/portfolio-icon-4.png"):
+>>>>>>> master
   
 actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -19820,9 +19896,15 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/portfolio-icon-4.png" for 127.0.0.1 at 2018-12-07 16:18:29 +0100
   
 ActionController::RoutingError (No route matches [GET] "/images/portfolio-icon-4.png"):
+=======
+Started GET "/images/portfolio-icon-5.png" for 127.0.0.1 at 2018-12-07 11:31:57 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/portfolio-icon-5.png"):
+>>>>>>> master
   
 actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -19851,9 +19933,15 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/portfolio-icon-5.png" for 127.0.0.1 at 2018-12-07 16:18:29 +0100
   
 ActionController::RoutingError (No route matches [GET] "/images/portfolio-icon-5.png"):
+=======
+Started GET "/images/portfolio-icon-6.png" for 127.0.0.1 at 2018-12-07 11:31:57 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/portfolio-icon-6.png"):
+>>>>>>> master
   
 actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -19882,9 +19970,15 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/portfolio-icon-6.png" for 127.0.0.1 at 2018-12-07 16:18:29 +0100
   
 ActionController::RoutingError (No route matches [GET] "/images/portfolio-icon-6.png"):
+=======
+Started GET "/images/team-section-1.png" for 127.0.0.1 at 2018-12-07 11:31:57 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/team-section-1.png"):
+>>>>>>> master
   
 actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -19913,9 +20007,15 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/team-section-1.png" for 127.0.0.1 at 2018-12-07 16:18:29 +0100
   
 ActionController::RoutingError (No route matches [GET] "/images/team-section-1.png"):
+=======
+Started GET "/images/team-section-2.png" for 127.0.0.1 at 2018-12-07 11:31:57 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/team-section-2.png"):
+>>>>>>> master
   
 actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -19944,9 +20044,15 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/team-section-2.png" for 127.0.0.1 at 2018-12-07 16:18:29 +0100
   
 ActionController::RoutingError (No route matches [GET] "/images/team-section-2.png"):
+=======
+Started GET "/images/team-section-3.png" for 127.0.0.1 at 2018-12-07 11:31:57 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/team-section-3.png"):
+>>>>>>> master
   
 actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -19975,6 +20081,7 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/team-section-3.png" for 127.0.0.1 at 2018-12-07 16:18:29 +0100
 Started GET "/images/avatar-small-1.png" for 127.0.0.1 at 2018-12-07 16:18:29 +0100
   
@@ -19982,6 +20089,12 @@ ActionController::RoutingError (No route matches [GET] "/images/avatar-small-1.p
   
   
 ActionController::RoutingError (No route matches [GET] "/images/team-section-3.png"):
+=======
+Started GET "/images/team-section-4.png" for 127.0.0.1 at 2018-12-07 11:31:57 +0100
+Started GET "/images/avatar-small-1.png" for 127.0.0.1 at 2018-12-07 11:31:57 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/team-section-4.png"):
+>>>>>>> master
   
 actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -20010,6 +20123,12 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
+=======
+  
+ActionController::RoutingError (No route matches [GET] "/images/avatar-small-1.png"):
+  
+>>>>>>> master
 actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -20037,7 +20156,11 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/avatar-small-2.png" for 127.0.0.1 at 2018-12-07 16:18:29 +0100
+=======
+Started GET "/images/avatar-small-2.png" for 127.0.0.1 at 2018-12-07 11:31:57 +0100
+>>>>>>> master
   
 ActionController::RoutingError (No route matches [GET] "/images/avatar-small-2.png"):
   
@@ -20068,7 +20191,11 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/avatar-small-3.png" for 127.0.0.1 at 2018-12-07 16:18:30 +0100
+=======
+Started GET "/images/avatar-small-3.png" for 127.0.0.1 at 2018-12-07 11:31:58 +0100
+>>>>>>> master
   
 ActionController::RoutingError (No route matches [GET] "/images/avatar-small-3.png"):
   
@@ -20099,7 +20226,11 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/avatar-small-4.png" for 127.0.0.1 at 2018-12-07 16:18:30 +0100
+=======
+Started GET "/images/avatar-small-4.png" for 127.0.0.1 at 2018-12-07 11:31:58 +0100
+>>>>>>> master
   
 ActionController::RoutingError (No route matches [GET] "/images/avatar-small-4.png"):
   
@@ -20130,40 +20261,17 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/avatar-small-5.png" for 127.0.0.1 at 2018-12-07 16:18:30 +0100
 Started GET "/images/avatar-small-6.png" for 127.0.0.1 at 2018-12-07 16:18:30 +0100
   
 ActionController::RoutingError (No route matches [GET] "/images/avatar-small-5.png"):
-  
-actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.6) lib/rack/method_override.rb:22:in `call'
-rack (2.0.6) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+=======
+Started GET "/images/avatar-small-5.png" for 127.0.0.1 at 2018-12-07 11:31:58 +0100
+Started GET "/images/avatar-small-6.png" for 127.0.0.1 at 2018-12-07 11:31:58 +0100
   
 ActionController::RoutingError (No route matches [GET] "/images/avatar-small-6.png"):
+>>>>>>> master
   
 actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -20192,7 +20300,45 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  
+<<<<<<< HEAD
+ActionController::RoutingError (No route matches [GET] "/images/avatar-small-6.png"):
+=======
+ActionController::RoutingError (No route matches [GET] "/images/avatar-small-5.png"):
+>>>>>>> master
+  
+actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/themeforest.gif" for 127.0.0.1 at 2018-12-07 16:18:30 +0100
+=======
+Started GET "/images/themeforest.gif" for 127.0.0.1 at 2018-12-07 11:31:58 +0100
+>>>>>>> master
   
 ActionController::RoutingError (No route matches [GET] "/images/themeforest.gif"):
   
@@ -20223,7 +20369,11 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/coadcanyon.gif" for 127.0.0.1 at 2018-12-07 16:18:30 +0100
+=======
+Started GET "/images/coadcanyon.gif" for 127.0.0.1 at 2018-12-07 11:31:58 +0100
+>>>>>>> master
   
 ActionController::RoutingError (No route matches [GET] "/images/coadcanyon.gif"):
   
@@ -20254,7 +20404,11 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/graphicriver.gif" for 127.0.0.1 at 2018-12-07 16:18:30 +0100
+=======
+Started GET "/images/graphicriver.gif" for 127.0.0.1 at 2018-12-07 11:31:59 +0100
+>>>>>>> master
   
 ActionController::RoutingError (No route matches [GET] "/images/graphicriver.gif"):
   
@@ -20285,7 +20439,11 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/docean.gif" for 127.0.0.1 at 2018-12-07 16:18:31 +0100
+=======
+Started GET "/images/docean.gif" for 127.0.0.1 at 2018-12-07 11:31:59 +0100
+>>>>>>> master
   
 ActionController::RoutingError (No route matches [GET] "/images/docean.gif"):
   
@@ -20316,7 +20474,11 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/audiojungle.gif" for 127.0.0.1 at 2018-12-07 16:18:31 +0100
+=======
+Started GET "/images/audiojungle.gif" for 127.0.0.1 at 2018-12-07 11:31:59 +0100
+>>>>>>> master
   
 ActionController::RoutingError (No route matches [GET] "/images/audiojungle.gif"):
   
@@ -20347,7 +20509,11 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/actividen.gif" for 127.0.0.1 at 2018-12-07 16:18:31 +0100
+=======
+Started GET "/images/actividen.gif" for 127.0.0.1 at 2018-12-07 11:31:59 +0100
+>>>>>>> master
   
 ActionController::RoutingError (No route matches [GET] "/images/actividen.gif"):
   
@@ -20378,7 +20544,11 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/photodone.gif" for 127.0.0.1 at 2018-12-07 16:18:31 +0100
+=======
+Started GET "/images/photodone.gif" for 127.0.0.1 at 2018-12-07 11:31:59 +0100
+>>>>>>> master
   
 ActionController::RoutingError (No route matches [GET] "/images/photodone.gif"):
   
@@ -20409,7 +20579,12 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/videgub.gif" for 127.0.0.1 at 2018-12-07 16:18:31 +0100
+=======
+Started GET "/images/videgub.gif" for 127.0.0.1 at 2018-12-07 11:31:59 +0100
+Started GET "/images/small1.jpg" for 127.0.0.1 at 2018-12-07 11:31:59 +0100
+>>>>>>> master
   
 ActionController::RoutingError (No route matches [GET] "/images/videgub.gif"):
   
@@ -20440,7 +20615,10 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/small1.jpg" for 127.0.0.1 at 2018-12-07 16:18:31 +0100
+=======
+>>>>>>> master
   
 ActionController::RoutingError (No route matches [GET] "/images/small1.jpg"):
   
@@ -20471,7 +20649,11 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/small2.jpg" for 127.0.0.1 at 2018-12-07 16:18:31 +0100
+=======
+Started GET "/images/small2.jpg" for 127.0.0.1 at 2018-12-07 11:31:59 +0100
+>>>>>>> master
   
 ActionController::RoutingError (No route matches [GET] "/images/small2.jpg"):
   
@@ -20502,7 +20684,11 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/small3.jpg" for 127.0.0.1 at 2018-12-07 16:18:32 +0100
+=======
+Started GET "/images/small3.jpg" for 127.0.0.1 at 2018-12-07 11:31:59 +0100
+>>>>>>> master
   
 ActionController::RoutingError (No route matches [GET] "/images/small3.jpg"):
   
@@ -20533,7 +20719,11 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/location-arrow.png" for 127.0.0.1 at 2018-12-07 16:18:32 +0100
+=======
+Started GET "/images/location-arrow.png" for 127.0.0.1 at 2018-12-07 11:32:00 +0100
+>>>>>>> master
   
 ActionController::RoutingError (No route matches [GET] "/images/location-arrow.png"):
   
@@ -20564,7 +20754,11 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/phone-arrow.png" for 127.0.0.1 at 2018-12-07 16:18:32 +0100
+=======
+Started GET "/images/phone-arrow.png" for 127.0.0.1 at 2018-12-07 11:32:00 +0100
+>>>>>>> master
   
 ActionController::RoutingError (No route matches [GET] "/images/phone-arrow.png"):
   
@@ -20595,7 +20789,11 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/mail-arrow.png" for 127.0.0.1 at 2018-12-07 16:18:32 +0100
+=======
+Started GET "/images/mail-arrow.png" for 127.0.0.1 at 2018-12-07 11:32:00 +0100
+>>>>>>> master
   
 ActionController::RoutingError (No route matches [GET] "/images/mail-arrow.png"):
   
@@ -20626,9 +20824,15 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/images/screen-5.jpg" for 127.0.0.1 at 2018-12-07 16:18:33 +0100
   
 ActionController::RoutingError (No route matches [GET] "/images/screen-5.jpg"):
+=======
+Started GET "/images/service-icon-2.png" for 127.0.0.1 at 2018-12-07 11:32:00 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/service-icon-2.png"):
+>>>>>>> master
   
 actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -20657,6 +20861,7 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/places" for 127.0.0.1 at 2018-12-07 16:18:45 +0100
 Processing by PlacesController#index as HTML
   Rendering places/index.html.erb within layouts/application
@@ -21138,3 +21343,36 @@ Processing by PlacesController#show as HTML
 Completed 200 OK in 488ms (Views: 450.3ms | ActiveRecord: 5.4ms)
 
 
+=======
+Started GET "/images/screen-5.jpg" for 127.0.0.1 at 2018-12-07 11:32:01 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/screen-5.jpg"):
+  
+actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+>>>>>>> master
