@@ -214,15 +214,13 @@
 }
 
 .card.hovercard .cardheader {
-    background: url("http://lorempixel.com/850/280/nature/4/");
     background-size: cover;
     height: 135px;
 }
 
 .card.hovercard .avatar {
-    position: relative;
-    top: -50px;
-    margin-bottom: -50px;
+    top: -30px;
+    margin-bottom: 0px;
 }
 
 .card.hovercard .avatar img {
@@ -233,7 +231,7 @@
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    border: 5px solid rgba(255,255,255,0.5);
+    border: 5px solid rgba(19, 196, 72, 0.5);
 }
 
 .card.hovercard .info {
@@ -241,15 +239,15 @@
 }
 
 .card.hovercard .info .title {
+    width: 100%;
     margin-bottom: 4px;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1;
     color: #262626;
     vertical-align: middle;
 }
 
 .card.hovercard .info .desc {
-    overflow: hidden;
     font-size: 12px;
     line-height: 20px;
     color: #737373;
@@ -258,7 +256,26 @@
 
 .card.hovercard .bottom {
     padding: 0 20px;
-    margin-bottom: 17px;
 }
 
 .btn{ border-radius: 50%; width:32px; height:32px; line-height:18px;  }
+.button-one {
+    padding:20px 60px;
+    outline: none;
+    background-color: #27ae60;
+    border: none;
+    border-radius:5px;
+    box-shadow: 0 9px #95a5a6;
+  }
+  
+  .button-one:hover{
+    background-color: #2ecc71;
+  }
+  
+  .button-one:active {
+    background-color: #2ecc71;
+    box-shadow: 0 5px #95a5a6;
+    transform: translateY(4px);
+  }
+  
+  
