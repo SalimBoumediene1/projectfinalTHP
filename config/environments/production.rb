@@ -1,6 +1,9 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  # Configuration Mailer for production
+  config.action_mailer.delivery_method = :mailjet_api
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
