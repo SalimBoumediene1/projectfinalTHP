@@ -192,7 +192,7 @@ input:-webkit-autofill:focus {
     padding: 8px 30px;
     border-radius: 50px;
     color: #ffffff;
-    background-color: #2f60c3;
+    background-color: #2FC335;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     border: none;
@@ -368,7 +368,7 @@ input:-webkit-autofill:focus {
 
 .client-area,
 .header-area {
-    background: #000000 url('images/parallax-2.jpg') no-repeat scroll center center / cover;
+    background: #000000 url(<%= asset_data_uri 'header.jpeg' %>) no-repeat scroll center center / cover;
 }
 
 .anlge-bg {
@@ -400,7 +400,7 @@ input:-webkit-autofill:focus {
 }
 
 .screen-slider .item {
-    background: url('images/mobile2.png') no-repeat scroll center center / auto 100%;
+    background: url('') no-repeat scroll center center / auto 100%;
     padding: 56px 22px;
     display: inline-block;
     margin: auto;
@@ -599,7 +599,7 @@ input:-webkit-autofill:focus {
 ***/
 
 .testimonial-area {
-    background: url('images/parallax-7.jpg') no-repeat scroll center center / cover;
+    background: url(<%= asset_data_uri 'foret2.jpg' %>) no-repeat scroll center center / cover;
     position: relative;
     color: #ffffff;
 }
@@ -643,7 +643,7 @@ input:-webkit-autofill:focus {
 ***/
 
 .price-area {
-    background: url('images/parallax-6.jpg') no-repeat scroll center center / cover
+    background: url(<%= asset_data_uri 'foret3.jpg' %>) no-repeat scroll center center / cover
 }
 
 .price-table h3 {
@@ -792,8 +792,10 @@ input:-webkit-autofill:focus {
 }
 
 .footer-bg {
-    background: url('images/angle-bg.png') no-repeat scroll center bottom / 100% auto;
+    background: url(<%= asset_data_uri 'footer.jpeg' %>) no-repeat scroll center bottom / 100% auto;
     z-index: -1;
+    filter: blur(9px);
+    -webkit-filter: blur(9px);
 }
 
 .footer-top {
