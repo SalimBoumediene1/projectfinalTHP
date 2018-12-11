@@ -10,7 +10,7 @@ class CartItemsController < ApplicationController
       else
         current_user.cart.items << item
       end
-      redirect_to root_path
+      redirect_to items_index_path
     end
   
     def update()

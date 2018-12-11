@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
+gem 'mailjet'
 gem 'gmaps4rails'
 gem 'google-api-client', '~> 0.11'
 gem 'open-weather'

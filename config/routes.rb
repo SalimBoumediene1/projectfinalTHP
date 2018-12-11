@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  get 'home/index'
   get 'items/index'
-  root 'items#index' 
+  root 'home#index' 
   resources :items
   resources :carts
   resources :cart_items

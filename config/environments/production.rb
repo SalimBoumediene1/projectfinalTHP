@@ -1,6 +1,9 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  # Configuration Mailer for production
+  config.action_mailer.delivery_method = :mailjet_api
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
@@ -88,6 +91,20 @@ Rails.application.configure do
     logger.formatter = config.log_formatter
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
+
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default_url_options = { :host => 'shielded-eyrie-68443.herokuapp.com' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.smtp_settings = {
+    :address => "smtp.gmail.com",
+    :port => 587,
+    :domain => "gmail.com",
+    :user_name => "#{Rails.application.credentials.name_email}",
+    :password => "#{Rails.application.credentials.name_password}",
+    :authentication => :plain,
+    :enable_starttls_auto => true
+  }
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
