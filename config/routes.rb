@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
-  get 'home/index'
+  get 'items/index'
+  root 'items#index' 
+  resources :items
+  resources :carts
+  resources :cart_items
   resources :places
-  root 'home#index'
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
