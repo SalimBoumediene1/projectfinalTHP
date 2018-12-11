@@ -32,3 +32,4 @@
 
 //= require js/main
 
+/*add to cart */

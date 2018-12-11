@@ -1,18 +1,18 @@
-frozen_string_literal: true
+#frozen_string_literal: true
 
 class Users::RegistrationsController < Devise::RegistrationsController
-   before_action :configure_sign_up_params, only: [:create, :new]
+  #before_action :configure_sign_up_params, only: [:create, :new]
   #before_action :configure_account_update_params, only: [:update]
   
   # GET /resource/sign_up
-   def new
-    puts "super"
-   end
+  # def new
+  #  super
+  # end
 
   # POST /resource
-  def create
-     if 
-   end
+  # def create
+  #   if 
+  # end
 
   # GET /resource/edit
   # def edit

@@ -1,3 +1,4 @@
+
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
@@ -25,3 +26,16 @@ doc.css('.list_offres .card-list-horizontal-content .col-xs-12 .description').ea
 10.times do |y|
     @places = Place.create(name: @tab_title[y], description: @tab_description[y], image_url: @tab_url[y], latitude: @tab_latitude[y], longitude: @tab_longitude[y])
 end
+
+doc = Nokogiri::HTML(open("https://wall.alphacoders.com/search.php?lang=French&search=forest"))
+    @taburl = []
+    @tabtitle = ["foret dorée","foret","une foret","foret gris","foret de la vega","foret petit","foret saute","foret pour THP","foret sombre","foret rose","foret","foret jolie","foret azerty","foret rouge","foret lyon","foret agitée","star wars","foret film","foret","foret final"]
+    myhash = {}
+    20.times do
+        doc.css('.boxgrid img @src').each do |url| @taburl << url.text end
+    end
+
+    20.times do |y|
+        @items = Item.create(title:@tabtitle[y], description:Faker::Lorem.paragraph, price:rand(1.00...10), image_url:@taburl[y])
+    end
+
