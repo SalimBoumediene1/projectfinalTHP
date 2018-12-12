@@ -57,6 +57,7 @@ class PlacesController < ApplicationController
   # DELETE /places/1.json
   def destroy
     @place.destroy
+    @place.image.purge
     respond_to do |format|
       format.html { redirect_to places_url, notice: 'Place was successfully destroyed.' }
       format.json { head :no_content }
@@ -71,6 +72,7 @@ class PlacesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def place_params
+    puts params
       params.require(:place).permit(:name, :latitude, :longitude)
     end
 end
