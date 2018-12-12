@@ -16,12 +16,11 @@
 //= require_tree .
 
 //= require js/vendor/modernizr-2.8.3.min
-
-//= require js/vendor/jquery-1.12.4.min
-  
+//= require js/vendor/jquery-1.12.4.min  
 //= require js/vendor/bootstrap.min
 
 //= require js/vendor/smooth-scroll.min
+//= require js/vendor/navdropprofile.min
     
 //= require js/owl.carousel.min
 //= require js/contact-form
