@@ -3,8 +3,9 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 <!------ Include the above in your HEAD tag ---------->
+<div class="panier">
 <% current_user.cart.cart_items.each do |cart_item| %>
-    <div class="container">
+<div class="container">
     <div class="row">
         <div class="col-sm-12 col-md-10 col-md-offset-1">
             <table class="table table-hover">
@@ -78,4 +79,5 @@
             </table>
         </div>
     </div>
+</div>
 </div>

@@ -26,7 +26,15 @@
 
 
  */
- .stretch, .button:after, .button:before {
+ /*item*/
+ .panier{
+  padding-top: 100px;
+ }
+ .item{
+   padding-top: 100px;
+ }
+ /*button*/
+ .stretch, .buttonn:after, .buttonn:before {
   bottom: 0;
   left: 0;
   position: absolute;
@@ -50,7 +58,7 @@
   -webkit-transition: opacity 300ms;
   transition: opacity 300ms;
   border: none;
-  padding: 20px;
+  padding: 5px;
   color: #FAF15D;
   font-weight: bold;
   letter-spacing: 0.05em;
