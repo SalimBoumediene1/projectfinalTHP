@@ -1,3 +1,5 @@
+<div class = "places">
+
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -15,8 +17,7 @@
   <%= @place.longitude %>
 </p>
 
-<%= link_to 'Edit', edit_place_path(@place) %>
-<%= link_to 'Back', places_path %>
+<%= link_to 'Back', places_path, class: "button" %>
 
 <p>
     <div id="map"></div>
@@ -29,3 +30,4 @@
     });
   </script>
 <% end %>
+</div>
