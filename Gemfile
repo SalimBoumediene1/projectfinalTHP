@@ -14,6 +14,7 @@ gem 'underscore-rails'
 gem 'devise'
 gem 'faker'
 gem 'nokogiri'
+gem 'gibbon'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'

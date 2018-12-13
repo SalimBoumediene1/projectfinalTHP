@@ -107,6 +107,9 @@ GEM
     faraday (0.15.4)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.25)
+    gibbon (3.2.0)
+      faraday (>= 0.9.1)
+      multi_json (>= 1.11.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     gmaps4rails (2.1.2)
@@ -298,6 +301,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   devise
   faker
+  gibbon
   gmaps4rails
   google-api-client (~> 0.11)
   image_processing (~> 1.2)
