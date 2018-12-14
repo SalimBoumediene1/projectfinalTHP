@@ -2,18 +2,52 @@
 // All this logic will automatically be available in application.js.
 
 
+var map, infoWindow;
 
 function initMap(lat, lng) {
-    var myCoords = new google.maps.LatLng(lat, lng);
+    let myCoords = new google.maps.LatLng(lat, lng);
     var mapOptions = {
     center: myCoords,
     zoom: 15
     };
 
+    infoWindow = new google.maps.InfoWindow;
+
+    // Try HTML5 geolocation.
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+        let pos = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        };
+
+        infoWindow.setPosition(pos);
+        infoWindow.setContent('Vous vous trouvez ici.');
+        infoWindow.open(map);
+        map.setCenter(pos);
+      }, function() {
+        handleLocationError(true, infoWindow, map.getCenter());
+      });
+    } else {
+      // Browser doesn't support Geolocation
+      handleLocationError(false, infoWindow, map.getCenter());
+    }
+
     var map    = new google.maps.Map(document.getElementById('map'), mapOptions);
     var marker = new google.maps.Marker({
         position: myCoords,
         map: map
+    });
+
+    var request = {
+        origin: myCoords,
+        destination: pos,
+        travelMode: google.maps.TravelMode.DRIVING
+    };
+    directionsService.route(request, function (response, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            directionsDisplay.setDirections(response);
+        }
     });
 };
 
