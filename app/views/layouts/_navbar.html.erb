@@ -37,14 +37,13 @@
 		</div>
 		<!--Logo/-->
 		<nav class="collapse navbar-collapse" id="primary-menu">
-			<ul class="nav navbar-nav navbar-right">
-				<li>
-		<%= link_to 'Acceuil', home_index_path %>
-	</li>
-			
+			<ul class="nav navbar-nav navbar-right">			
 	<% if user_signed_in? %>
 	<li>
 	<%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
+	</li>
+	<li>
+	<%= link_to 'My Acount', home_profil_path%>
 	</li>
 	<li>
 		<%= link_to 'Edit', edit_user_registration_path %>

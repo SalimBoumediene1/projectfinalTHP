@@ -73,7 +73,24 @@
                         <button, type="button" class="btn btn-default">
                             <span class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
                         </button></td>
-                       
+                        <td>
+                        <%= form_tag charges_path do %>
+                            <article>
+                              <% if flash[:error].present? %>
+                                <div id="error_explanation">
+                                  <p><%= flash[:error] %></p>
+                                </div>
+                              <% end %>
+                             
+                            </article>
+                          
+                            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                    data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+                                    data-amount="<%=current_user.cart.total_price * 100%>"
+                                    data-locale="auto">
+                                     </script>
+                          <% end %>
+                          </td>
                     </tr>
                 </tbody>
             </table>
