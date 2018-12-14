@@ -1,12 +1,14 @@
 class PlacesController < ApplicationController
   before_action :set_place, only: [:show, :edit, :update, :destroy]
-
   # GET /places
   # GET /places.json
   def index
+   if user_signed_in?
     @places = Place.all
     @meteo = Meteo.new
-    
+   else 
+    redirect_to home_index_path
+  end
   end
 
   # GET /places/1

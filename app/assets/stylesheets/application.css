@@ -26,14 +26,34 @@
 
 
  */
- .stretch, .button:after, .button:before {
+ /*profil*/
+ .profil{
+   padding-top: 50px;
+ }
+ /*merci*/
+ .merci{
+   padding-top: 60px;
+ }
+ /*places*/
+ .places{
+  padding-top: 40px;
+ }
+ /*item*/
+ .panier{
+  padding-top: 100px;
+ }
+ .item{
+   padding-top: 100px;
+ }
+ /*button*/
+ .stretch, .buttonn:after, .buttonn:before {
   bottom: 0;
   left: 0;
   position: absolute;
   right: 0;
   top: 0;
 }    
-.button {
+.buttonn {
   padding-top: 200px;
   width: 100px;
   background: rgb(234, 9, 9);
@@ -50,7 +70,7 @@
   -webkit-transition: opacity 300ms;
   transition: opacity 300ms;
   border: none;
-  padding: 20px;
+  padding: 5px;
   color: #FAF15D;
   font-weight: bold;
   letter-spacing: 0.05em;
@@ -60,7 +80,7 @@
   cursor: pointer;
   z-index: 99;
 }
-.button:after {
+.buttonn:after {
   -moz-box-shadow: rgba(212, 207, 201, 0.75) 0 0 15px 2px;
   -webkit-box-shadow: rgba(212, 207, 201, 0.75) 0 0 15px 2px;
   box-shadow: rgba(212, 207, 201, 0.75) 0 0 15px 2px;
@@ -69,17 +89,17 @@
   height: 2px;
   opacity: 0;
 }
-.button:before {
+.buttonn:before {
   content: "";
   opacity: 0;
 }
-.button:hover {
+.buttonn:hover {
   -webkit-animation: glitch 750ms infinite;
 }
-.button:hover:before {
+.buttonn:hover:before {
   opacity: 1;
 }
-.button:hover:after {
+.buttonn:hover:after {
   -webkit-animation: scan 2s infinite;
   opacity: 1;
 }
