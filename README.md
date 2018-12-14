@@ -18,7 +18,7 @@ Vous pouvez retrouver une version en production du site [en cliquant ici](https:
 
 ## EQUIPE
 
-L'équipe **THP-BDX-1** est composée des membres suivants :
+L'équipe **Team Vert** est composée des membres suivants :
 * salim boumedienne- back-front
 * khalil saghour - back-front
 
@@ -36,10 +36,10 @@ L'objectif de la semaine était de réaliser un site de map de foret. Réalisé 
 * Les visiteurs peuvent parcourir les produits et aller sur leur page
 * Il est possible de s'inscrire et de se connecter en temps qu'utilisateur
 * Un utilisateur peut ajouter des produits à son panier, et le supprimer ultérieurement
-* Un utilisateur peut passer une commande (don pour l'associassiion),(checkout) et stripe
+* Un utilisateur peut passer une commande (dons pour l'association),(checkout) et stripe
 * Un utilisateur dispose d'une page profil où il peut voir son profil
 * Un utilisateur peut éditer ses informations personnelles ( nom, mail, mot de passe )
-*  l'utilisateur reçoit un message de remerciement pour son don
+*  l'utilisateur reçoit un message de remerciement pour son dons
 * Un utilisateur peut accédez a la page place ou il peut créez un endroit de foret qu'il connait et voir les site de    parc les plus fréquentez a lyon
 
 
