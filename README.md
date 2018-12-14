@@ -7,7 +7,7 @@
 
 ## DISCLAIMER
 
-Attention, ce site est mignon.
+Attention, ce site est écolo.
 
 ---
 
@@ -45,9 +45,6 @@ L'objectif de la semaine était de réaliser un site de map de foret. Réalisé 
 
 
 ## REMERCIEMENTS
-
-![Team vert](http://image.noelshack.com/fichiers/2018/48/4/1543504354-thpbdx1.png)
-
 
 Toute l'équipe de THP et l'équipe Team vert
 
