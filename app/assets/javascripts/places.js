@@ -38,6 +38,7 @@ function initMap(lat, lng) {
         position: myCoords,
         map: map
     });
+};
 
     var request = {
         origin: myCoords,
