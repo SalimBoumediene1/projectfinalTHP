@@ -279,3 +279,15 @@
     transform: translateY(4px);
   }
   
+  #steps {
+    width: 280px;
+    height: 400px;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 0 16px #C0C0C0;
+    padding: 10px;
+    overflow: auto;
+  }

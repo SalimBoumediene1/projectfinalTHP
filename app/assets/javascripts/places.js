@@ -5,7 +5,7 @@
 var map, infoWindow;
 
 function initMap(lat, lng) {
-    let myCoords = new google.maps.LatLng(lat, lng);
+    var myCoords = new google.maps.LatLng(lat, lng);
     var mapOptions = {
     center: myCoords,
     zoom: 15
@@ -16,7 +16,7 @@ function initMap(lat, lng) {
     // Try HTML5 geolocation.
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(function(position) {
-        let pos = {
+        var pos = {
           lat: position.coords.latitude,
           lng: position.coords.longitude
         };
@@ -38,7 +38,6 @@ function initMap(lat, lng) {
         position: myCoords,
         map: map
     });
-};
 
     var request = {
         origin: myCoords,
