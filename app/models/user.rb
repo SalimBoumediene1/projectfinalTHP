@@ -8,7 +8,7 @@ class User < ApplicationRecord
 
   has_many :orders
   has_one :picture
-
+  has_many :comments
   after_create :create_cart
 
   def create_cart

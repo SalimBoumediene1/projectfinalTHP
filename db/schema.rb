@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_11_141637) do
+ActiveRecord::Schema.define(version: 2018_12_12_103802) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,6 +51,17 @@ ActiveRecord::Schema.define(version: 2018_12_11_141637) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_carts_on_user_id"
+  end
+
+  create_table "comments", force: :cascade do |t|
+    t.string "commenter"
+    t.text "body"
+    t.bigint "place_id"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["place_id"], name: "index_comments_on_place_id"
+    t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
   create_table "item_orders", force: :cascade do |t|
@@ -102,5 +113,7 @@ ActiveRecord::Schema.define(version: 2018_12_11_141637) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "comments", "places"
+  add_foreign_key "comments", "users"
   add_foreign_key "orders", "users"
 end

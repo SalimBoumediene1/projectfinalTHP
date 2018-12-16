@@ -1,6 +1,6 @@
 class ChargesController < ApplicationController
     def new
-  end
+    end
   
   def create
     @amount = (current_user.cart.total_price * 100).to_i
@@ -25,11 +25,13 @@ class ChargesController < ApplicationController
       ItemOrder.create(order_id: new_order.id, quantity: cart_item.quantity, item_id: cart_item.item_id)
       cart_item.destroy
     end
+
+    ForestMailer.welcome_email(current_user.email).deliver_now
   
   rescue Stripe::CardError => e
     flash[:error] = e.message
     redirect_to new_charge_path
+  end
   
-  end
-  end
+end
   

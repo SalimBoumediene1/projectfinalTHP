@@ -7,7 +7,7 @@ class ForestMailer < ActionMailer::Base
         mail(
         from: "salimboumediene@gmail.com",
         to: "#{user}",
-        subject: "This is a nice welcome email"
+        subject: "This is khkgjfgjf email"
         )
       end
 
