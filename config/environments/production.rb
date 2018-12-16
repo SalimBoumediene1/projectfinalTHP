@@ -93,7 +93,7 @@ Rails.application.configure do
   end
 
   config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_url_options = { :host => 'shielded-eyrie-68443.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'guarded-earth-49014.herokuapp.com' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   config.action_mailer.smtp_settings = {
