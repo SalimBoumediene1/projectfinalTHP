@@ -103,7 +103,7 @@ Rails.application.configure do
     :user_name => "#{Rails.application.credentials.name_email}",
     :password => "#{Rails.application.credentials.name_password}",
     :authentication => :plain,
-    :enable_starttls_auto => true
+    #:enable_starttls_auto => true
   }
 
   # Do not dump schema after migrations.
