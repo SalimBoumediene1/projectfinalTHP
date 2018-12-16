@@ -26,7 +26,7 @@ class ChargesController < ApplicationController
       cart_item.destroy
     end
 
-    #ForestMailer.welcome_email(current_user.email).deliver_now
+    ForestMailer.welcome_email(current_user.email).deliver_now
   
   rescue Stripe::CardError => e
     flash[:error] = e.message
