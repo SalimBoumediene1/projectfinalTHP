@@ -1,3 +1,4 @@
+<div class="container">
 <%= form_with(model: place, local: true) do |form| %>
   <% if place.errors.any? %>
     <div id="error_explanation">
@@ -26,6 +27,11 @@
     <%= form.text_field :longitude %>
   </div>
 
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </div>
+
   <p>
     <div id="map2"></div>
   </p>
@@ -41,3 +47,4 @@
       document.addEventListener("DOMContentLoaded", initMap2);
   </script>
 <% end %>
+</div>

@@ -58,11 +58,11 @@
 	<%= link_to 'Panier', cart_path(current_user.cart.id)%>
 	</li> 
 	<li>
-	<%= link_to 'magasin', items_index_path%>
+	<%= link_to 'Don', items_index_path%>
 	</li> 
 	<%else%>
 	<li>
-	<%= link_to 'magasin', items_index_path%>
+	<%= link_to 'Don', items_index_path%>
 	</li> 
 	<li>
 		<%= link_to 'Sign in/Sign Up', new_user_registration_path %>
