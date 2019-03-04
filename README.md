@@ -41,6 +41,7 @@ L'objectif de la semaine était de réaliser un site de map de foret. Réalisé 
 * Un utilisateur peut éditer ses informations personnelles ( nom, mail, mot de passe )
 *  l'utilisateur reçoit un message de remerciement pour son dons
 * Un utilisateur peut accédez a la page place ou il peut créez un endroit de foret qu'il connait et voir les site de    parc les plus fréquentez a lyon
+pour le test d'achat tapez 4242 4242 4242 4242
 
 
 
@@ -48,6 +49,8 @@ L'objectif de la semaine était de réaliser un site de map de foret. Réalisé 
 
 Toute l'équipe de THP et l'équipe Team vert
 
+
+on a carburer a sa:
 ![coffee](http://image.noelshack.com/fichiers/2018/48/4/1543504475-nescaf-200-g.jpg)
 ![monster](http://image.noelshack.com/fichiers/2018/48/4/1543504519-3717996-1.jpg)
 ![orangina](http://image.noelshack.com/fichiers/2018/48/4/1543504628-orangina-sparkling-citrus-beverage-case-330-ml.jpg)
